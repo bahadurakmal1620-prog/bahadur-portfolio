@@ -26,15 +26,30 @@ export default function Home() {
         <h2 style={{ fontSize: "22px", marginBottom: "10px" }}>Skills</h2>
         <ul style={{ lineHeight: "1.8", color: "#333" }}>
           <li>AI/ML: Model training, LLM integration (Gemini, OpenAI)</li>
+          <li>Computer Vision: Face recognition, object detection (DeepFace, OpenCV)</li>
           <li>Backend: Python, FastAPI, .NET</li>
           <li>Frontend: Next.js, React, TypeScript</li>
-          <li>Tools: Git/GitHub, REST APIs</li>
+          <li>Tools: Git/GitHub, REST APIs, ChromaDB, CrewAI</li>
         </ul>
       </section>
 
       {/* Projects */}
       <section style={{ marginBottom: "50px" }}>
         <h2 style={{ fontSize: "22px", marginBottom: "10px" }}>Projects</h2>
+
+        <div style={{ border: "1px solid #ddd", borderRadius: "8px", padding: "20px", marginBottom: "20px" }}>
+          <h3 style={{ fontSize: "18px", marginBottom: "8px" }}>AI Attendance System</h3>
+          <p style={{ color: "#555", marginBottom: "10px" }}>
+            An automated face recognition attendance system for university classrooms. Teachers upload
+            a group photo of the class and the system automatically identifies each student and marks
+            their attendance using DeepFace. Includes student registration, teacher records with CSV
+            export, per-student attendance reports, and shortage warnings for students below 80%.
+            Built with FastAPI, Next.js, and DeepFace.
+          </p>
+          <a href="https://github.com/bahadurakmal1620-prog/ai-attendance-system" style={{ color: "#2563eb" }}>
+            View on GitHub →
+          </a>
+        </div>
 
         <div style={{ border: "1px solid #ddd", borderRadius: "8px", padding: "20px", marginBottom: "20px" }}>
           <h3 style={{ fontSize: "18px", marginBottom: "8px" }}>AI Interview Assistant</h3>
